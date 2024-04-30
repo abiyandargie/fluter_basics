@@ -17,10 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       body: Container(
         decoration: const BoxDecoration(
-          image:  DecorationImage(
-            image: AssetImage('C://Users/HP/Desktop/flutter_course/flutter_basic/lib/background.jpg'), // Replace with your image path
-            fit: BoxFit.cover,
-          ),
+          color: Colors.blue, // Replace with your desired background color
         ),
         child: Center(
           child: Column(
@@ -40,8 +37,8 @@ class MyApp extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: const Text('Button Clicked'),
-                        content: const Text('The button has been clicked!'),
+                        title: const Text(' Button Clicked'),
+                        content: const Text('The click me button has been clicked!'),
                         actions: [
                           TextButton(
                             onPressed: () {
